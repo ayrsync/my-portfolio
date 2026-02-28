@@ -6,10 +6,10 @@ import Lightbox from "react-18-image-lightbox";
 import "../../../node_modules/react-18-image-lightbox/style.css";
 import Image from "next/image";
 const images = [
-  "/images/works/1.jpg",
-  "/images/works/2.jpg",
-  "/images/works/3.jpg",
-  "/images/works/4.jpg",
+  "/images/works/1.webp",
+  "/images/works/2.webp",
+  "/images/works/3.webp",
+  "/images/works/4.webp",
   "/images/works/5.jpg",
   "/images/works/6.jpg",
   "/images/works/7.jpg",
@@ -30,69 +30,73 @@ export default function Projects() {
       <section className="relative md:py-24 py-16" id="project">
         <div className="container">
           <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
-              My Work & Projects
-            </h3>
+            <h2 className="mb-6 md:text-3xl text-2xl font-semibold">
+              Real Products. Real Growth.
+            </h2>
 
-            <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-              Obviously I am a Web Designer. Web Developer with over 7 years of
-              experience. Experienced with all stages of the development.
+            <p className="text-slate-500 max-w-2xl mx-auto text-[16px] leading-relaxed">
+              These aren’t just websites — they’re business platforms built to
+              generate leads, automate operations, and scale sustainably. From
+              healthcare systems to legal marketplaces, each product was built
+              with long-term growth in mind.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+            <a
+              href="https://www.onlinemedicalcard.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+            >
               <Image
                 height={0}
                 width={0}
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
-                src="/images/works/1.png"
+                src="/images/works/1.webp"
                 alt=""
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Fronter Theme
-                </Link>
-                <span className="block text-sm text-slate-400">
-                  UI / UX Design
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                  Online Medical Card
                 </span>
-              </div>
+                <span className="block text-sm text-slate-400">
+                  Healthcare Platform
+                </span>
+              </span>
 
               <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(0)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
+                <div className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox">
                   <Unicons.UilCamera width={16} />
-                </Link>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+            <a
+              href="https://lawyerdex.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+            >
               <Image
                 height={0}
                 width={0}
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
-                src="/images/works/2.png"
+                src="/images/works/2.webp"
                 alt=""
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Landrick Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Technology</span>
-              </div>
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                  Lawyerdex
+                </span>
+                <span className="block text-sm text-slate-400">
+                  Legal Marketplace
+                </span>
+              </span>
 
               <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
@@ -103,27 +107,31 @@ export default function Projects() {
                   <Unicons.UilCamera width={16} />
                 </Link>
               </div>
-            </div>
+            </a>
 
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+            <a
+              href="https://myesadoctor.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+            >
               <Image
                 height={0}
                 width={0}
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
-                src="/images/works/3.png"
+                src="/images/works/3.webp"
                 alt=""
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Valexy Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Landing</span>
-              </div>
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                  My ESA Doctor
+                </span>
+                <span className="block text-sm text-slate-400">
+                  Healthcare Automation
+                </span>
+              </span>
 
               <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
@@ -134,27 +142,31 @@ export default function Projects() {
                   <Unicons.UilCamera width={16} />
                 </Link>
               </div>
-            </div>
+            </a>
 
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+            <a
+              href="https://www.coox.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+            >
               <Image
                 height={0}
                 width={0}
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
-                src="/images/works/4.jpg"
+                src="/images/works/4.webp"
                 alt=""
               />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Superex Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Digital</span>
-              </div>
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                  Coox
+                </span>
+                <span className="block text-sm text-slate-400">
+                  Food and services platform
+                </span>
+              </span>
 
               <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
@@ -165,9 +177,9 @@ export default function Projects() {
                   <Unicons.UilCamera width={16} />
                 </Link>
               </div>
-            </div>
+            </a>
 
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
+            {/* <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
               <Image
                 height={0}
                 width={0}
@@ -291,7 +303,7 @@ export default function Projects() {
                   <Unicons.UilCamera width={16} />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

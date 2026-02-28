@@ -11,7 +11,51 @@ export default function AboutUs() {
       <div className="container">
         <div className="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
           <div className="lg:col-span-5 lg:px-8">
-            <div className="relative">
+            <div className="relative w-full max-w-xl mx-auto">
+              {/* background glow */}
+              <div className="absolute -inset-6 bg-amber-100/40 blur-2xl rounded-3xl"></div>
+
+              <div className="relative bg-white border border-slate-200 rounded-2xl shadow-sm p-6">
+                {/* header */}
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <p className="text-sm font-semibold text-slate-800">
+                      Example System Structure
+                    </p>
+                    <p className="text-xs text-slate-500">
+                      How your product is organized
+                    </p>
+                  </div>
+
+                  <span className="text-xs bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-medium">
+                    Lean Build
+                  </span>
+                </div>
+
+                {/* diagram */}
+                <div className="bg-slate-50 rounded-lg p-3">
+                  <Image
+                    src="/images/hero/mvp-diagram.svg"
+                    alt="MVP architecture overview"
+                    width={900}
+                    height={600}
+                    className="w-full h-auto"
+                    priority
+                  />
+                </div>
+
+                {/* explanation */}
+                <div className="mt-5 space-y-2 text-sm text-slate-600">
+                  <p className="font-medium text-slate-800">
+                    What working with me looks like:
+                  </p>
+                  <p>• Plan → Build → Launch → Improve</p>
+                  <p>• Structured phases (no chaos development)</p>
+                  <p>• Decisions explained before implementation</p>
+                </div>
+              </div>
+            </div>
+            {/* <div className="relative">
               <div className="absolute inset-0 border dark:border-gray-800 rounded-full -mt-[10px] -ms-3 h-[100%] w-[100%] -z-1"></div>
               <Image
                 src="/images/ab2.jpg"
@@ -40,26 +84,27 @@ export default function AboutUs() {
                   Years <br /> Experience
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="lg:col-span-7">
             <div className="lg:ms-5">
               <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
-                I am a Passionate Web Developer
+                My goal isn’t to just build your first version — it’s to make
+                sure you never need to rebuild it.
               </h3>
 
               <p className="text-slate-400 max-w-xl text-[15px]">
-                With over 7 years of experience, I specialize in crafting
-                dynamic web projects that are scalable, user-friendly, and
-                visually appealing. From front-end development to full-stack
-                solutions, I bring the best web designs to life.
+                Most early products fail because they are built either too
+                quickly or too heavily. I follow a structured build approach
+                that lets you launch fast while keeping the foundation stable
+                for future growth.
               </p>
               <p className="text-slate-400 max-w-xl text-[15px] mt-6">
-                I’m passionate about creating seamless web experiences that help
-                businesses thrive in the digital world. I work with modern tools
-                like React.js, Next.js, and SEO best practices to ensure optimal
-                performance.
+                The system on the left shows how your product is planned before
+                development starts. This prevents hidden complexity, unexpected
+                costs, and the common situation where a working MVP must be
+                rebuilt from scratch.
               </p>
 
               <div className="mt-6">
@@ -78,14 +123,14 @@ export default function AboutUs() {
       <div className="container md:mt-24 mt-16">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
-            Hobbies & Expertise
+            What I can solve for your business
           </h3>
 
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-            As a Web Developer and SEO Expert, I have accumulated knowledge in
-            various technical fields, including front-end frameworks, back-end
-            development, SEO, and digital marketing strategies to help
-            businesses grow online.
+            I work with companies that need more than a designer and more than a
+            coder. Whether you're launching, rebuilding, or scaling — I help
+            structure your platform so marketing, SEO, and development don’t
+            fight each other.
           </p>
         </div>
 

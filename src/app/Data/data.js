@@ -1,25 +1,25 @@
 import * as Icon from "react-feather";
 export const expertiseData = [
   {
-    title: "Developing",
+    title: "Web Development",
     Icon: Icon.Monitor,
   },
   {
-    title: "Mac OS",
-    Icon: Icon.StopCircle,
+    title: "Mobile App Development",
+    Icon: Icon.Phone,
   },
-  {
-    title: "Cinema",
-    Icon: Icon.Video,
-  },
-  {
-    title: "Coffee",
-    Icon: Icon.Coffee,
-  },
-  {
-    title: "Music",
-    Icon: Icon.Music,
-  },
+  // {
+  //   title: "Cinema",
+  //   Icon: Icon.Video,
+  // },
+  // {
+  //   title: "Coffee",
+  //   Icon: Icon.Coffee,
+  // },
+  // {
+  //   title: "Music",
+  //   Icon: Icon.Music,
+  // },
   {
     title: "Games",
     Icon: Icon.Watch,
@@ -28,18 +28,18 @@ export const expertiseData = [
     title: "Designing",
     Icon: Icon.Box,
   },
+  // {
+  //   title: "Sports",
+  //   Icon: Icon.Target,
+  // },
   {
-    title: "Sports",
-    Icon: Icon.Target,
+    title: "SEO Optimization",
+    Icon: Icon.TrendingUp,
   },
-  {
-    title: "Painting",
-    Icon: Icon.PenTool,
-  },
-  {
-    title: "Reading",
-    Icon: Icon.Book,
-  },
+  // {
+  //   title: "Reading",
+  //   Icon: Icon.Book,
+  // },
   {
     title: "Android",
     Icon: Icon.Smartphone,

@@ -16,8 +16,9 @@ export default function HeroOne() {
         <div className="container">
           <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
             <div>
-              <h4 className="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4">
-                Hey! I am <br />
+              <h1 className="font-bold lg:text-[40px] text-3xl lg:leading-normal leading-normal mb-4">
+                Launch your product the right way — without burning your budget.
+                {/* Hey! I am <br />
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
@@ -42,26 +43,39 @@ export default function HeroOne() {
                 >
                   {" "}
                   <span className="wrap"></span>{" "}
-                </span>
-              </h4>
+                </span> */}
+              </h1>
+              <h2 className="text-slate-600">
+                I help early-stage founders turn ideas into working platforms
+                using lean, scalable development
+              </h2>
               <p className="text-slate-400 max-w-xl">
-                Obviously I am a SEO Expert. Web Developer with over 7 years of
-                experience. Experienced with all stages of the development.
+                Many agencies ignore small projects, and many freelancers build
+                quick hacks that break later. I focus on building MVPs that are
+                fast to launch but structured to grow — so you don’t rebuild
+                everything when your product starts working.
               </p>
+              {/* <p className="text-slate-400 max-w-xl">
+                I work with founders and businesses who are tired of slow
+                developers, messy code, and websites that don’t rank or convert.
+                I build systems where performance, search visibility, and user
+                experience work together — so your marketing actually produces
+                results instead of just traffic.
+              </p> */}
 
               <div className="mt-6">
                 <Link
                   href="#contact"
                   className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md"
                 >
-                  Hire Me
+                  Discuss Your Project
                 </Link>
-                <Link
+                {/* <Link
                   href=""
                   className="btn bg-amber-500/10 hover:bg-amber-500 border-amber-500/10 hover:border-amber-500 text-amber-500 hover:text-white rounded-md ms-1"
                 >
                   Download CV
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -71,11 +85,11 @@ export default function HeroOne() {
                 width={0}
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
-                src="/images/hero/2.png"
+                src="/images/hero/2.webp"
                 alt=""
               />
 
-              <div className="absolute lg:bottom-20 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+              {/* <div className="absolute lg:bottom-20 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
                 <span className="text-3xl font-medium mb-0">
                   <span className="counter-value font-bold" data-target="125">
                     {" "}
@@ -88,17 +102,17 @@ export default function HeroOne() {
                   </span>
                   +
                 </span>
-                <h6 className="text-sm text-slate-400 mt-1">
+                <h2 className="text-sm text-slate-400 mt-1">
                   Project Completed
-                </h6>
-              </div>
+                </h2>
+              </div> */}
 
-              <div className="absolute lg:top-80 md:top-56 top-48 ltr:md:-right-0 ltr:right-2 rtl:md:-left-0 rtl:left-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
-                <h6 className="font-semibold">Web Designer</h6>
-                <h6 className="text-sm text-slate-400 mt-1">
+              {/* <div className="absolute lg:top-80 md:top-56 top-48 ltr:md:-right-0 ltr:right-2 rtl:md:-left-0 rtl:left-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">
+                <h2 className="font-semibold">Web Designer</h2>
+                <h2 className="text-sm text-slate-400 mt-1">
                   7+ Years Experience
-                </h6>
-              </div>
+                </h2>
+              </div> */}
             </div>
           </div>
         </div>
