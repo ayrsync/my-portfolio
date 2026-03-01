@@ -7,7 +7,7 @@ import CountUp from "react-countup";
 
 export default function AboutUs() {
   return (
-    <section className="relative md:py-24 py-16" id="about">
+    <section className="relative md:py-24 py-16 " id="about">
       <div className="container">
         <div className="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center gap-[30px]">
           <div className="lg:col-span-5 lg:px-8">
@@ -15,9 +15,9 @@ export default function AboutUs() {
               {/* background glow */}
               <div className="absolute -inset-6 bg-amber-100/40 blur-2xl rounded-3xl"></div>
 
-              <div className="relative bg-white border border-slate-200 rounded-2xl shadow-sm p-6">
+              <div className="relative border border-slate-200 rounded-2xl shadow-sm p-6">
                 {/* header */}
-                <div className="flex items-center justify-between mb-4">
+                {/* <div className="flex items-center justify-between mb-4">
                   <div>
                     <p className="text-sm font-semibold text-slate-800">
                       Example System Structure
@@ -30,16 +30,16 @@ export default function AboutUs() {
                   <span className="text-xs bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-medium">
                     Lean Build
                   </span>
-                </div>
+                </div> */}
 
                 {/* diagram */}
                 <div className="bg-slate-50 rounded-lg p-3">
                   <Image
-                    src="/images/hero/mvp-diagram.svg"
+                    src="/images/about_image.png"
                     alt="MVP architecture overview"
-                    width={900}
-                    height={600}
-                    className="w-full h-auto"
+                    width={600}
+                    height={900}
+                    className="w-full h-auto rounded-lg shadow-md "
                     priority
                   />
                 </div>

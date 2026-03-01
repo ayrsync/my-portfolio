@@ -63,7 +63,7 @@ export default function HeroOne() {
                 results instead of just traffic.
               </p> */}
 
-              <div className="mt-6">
+              <div className="mt-6 mb-6">
                 <Link
                   href="#contact"
                   className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white rounded-md"
@@ -86,7 +86,7 @@ export default function HeroOne() {
                 sizes="100vw"
                 style={{ height: "auto", width: "100%" }}
                 src="/images/hero/2.webp"
-                alt=""
+                alt="hero-image"
               />
 
               {/* <div className="absolute lg:bottom-20 md:bottom-10 bottom-2 ltr:md:-left-5 ltr:left-2 rtl:md:-right-5 rtl:right-2 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 m-3 w-44 text-center">

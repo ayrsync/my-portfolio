@@ -67,11 +67,15 @@ export default function Projects() {
                 </span>
               </span>
 
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <div className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox">
+              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                <Link
+                  href="#"
+                  onClick={() => handleCLick(0)}
+                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
+                >
                   <Unicons.UilCamera width={16} />
-                </div>
-              </div>
+                </Link>
+              </span>
             </a>
 
             <a
@@ -98,7 +102,7 @@ export default function Projects() {
                 </span>
               </span>
 
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
                   href="#"
                   onClick={() => handleCLick(1)}
@@ -106,7 +110,7 @@ export default function Projects() {
                 >
                   <Unicons.UilCamera width={16} />
                 </Link>
-              </div>
+              </span>
             </a>
 
             <a
@@ -133,7 +137,7 @@ export default function Projects() {
                 </span>
               </span>
 
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
                   href="#"
                   onClick={() => handleCLick(2)}
@@ -141,7 +145,7 @@ export default function Projects() {
                 >
                   <Unicons.UilCamera width={16} />
                 </Link>
-              </div>
+              </span>
             </a>
 
             <a
@@ -168,7 +172,7 @@ export default function Projects() {
                 </span>
               </span>
 
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
                 <Link
                   href="#"
                   onClick={() => handleCLick(3)}
@@ -176,7 +180,7 @@ export default function Projects() {
                 >
                   <Unicons.UilCamera width={16} />
                 </Link>
-              </div>
+              </span>
             </a>
 
             {/* <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
