@@ -26,14 +26,14 @@ export default function Navbar() {
           <Image
             width={96}
             height={20}
-            src="/images/logo-dark.png"
+            src="/images/logo-light-3.png"
             className="inline-block dark:hidden"
             alt=""
           />
           <Image
             width={96}
             height={20}
-            src="/images/logo-light.png"
+            src="/images/logo-dark-3.png"
             className="hidden dark:inline-block"
             alt=""
           />

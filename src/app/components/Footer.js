@@ -53,7 +53,7 @@ export default function Footer() {
 
               <li className="inline">
                 <Link
-                  href="mailto:hello@ayrsync.com"
+                  href="mailto:arysync@gmail.com"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
                 >
                   <Unicons.UilEnvelope width={16} />
