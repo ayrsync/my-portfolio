@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="lg:col-span-3 md:text-start text-center">
               <Link href="#" className="text-[22px] focus:outline-none">
                 <Image
-                  src="/images/logo-light.png"
+                  src="/images/logo-dark-3.png"
                   width={96}
                   height={20}
                   className="mx-auto md:me-auto md:ms-0"
