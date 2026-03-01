@@ -90,8 +90,8 @@ export default function AboutUs() {
           <div className="lg:col-span-7">
             <div className="lg:ms-5">
               <h3 className="mb-6 md:text-2xl text-xl md:leading-normal leading-normal font-semibold">
-                My goal isn’t to just build your first version — it’s to make
-                sure you never need to rebuild it.
+                My goal isn&apos;t to just build your first version — it&apos;s
+                to make sure you never need to rebuild it.
               </h3>
 
               <p className="text-slate-400 max-w-xl text-[15px]">
@@ -128,9 +128,9 @@ export default function AboutUs() {
 
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
             I work with companies that need more than a designer and more than a
-            coder. Whether you're launching, rebuilding, or scaling — I help
-            structure your platform so marketing, SEO, and development don’t
-            fight each other.
+            coder. Whether you&apos;re launching, rebuilding, or scaling — I
+            help structure your platform so marketing, SEO, and development
+            don&apos;t fight each other.
           </p>
         </div>
 
