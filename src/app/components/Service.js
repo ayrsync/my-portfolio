@@ -16,10 +16,12 @@ export default function Services() {
             What Do I Offer?
           </h3>
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-            With over 7 years of experience in web design and development, I
-            offer comprehensive solutions at all stages of the development
-            cycle. From frontend to backend, and SEO optimization, I help
-            businesses succeed online.
+            Free Website Audit — No Fluff, Just Facts
+          </p>
+          <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
+            No technical jargon. No hidden fees. Just an honest look at what's
+            working and what's not. Your website is working 24/7. Isn't it time
+            it worked for you?
           </p>
         </div>
 
