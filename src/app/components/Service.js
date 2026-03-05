@@ -19,9 +19,9 @@ export default function Services() {
             Free Website Audit — No Fluff, Just Facts
           </p>
           <p className="text-slate-400 max-w-xl mx-auto text-[15px]">
-            No technical jargon. No hidden fees. Just an honest look at what's
-            working and what's not. Your website is working 24/7. Isn't it time
-            it worked for you?
+            No technical jargon. No hidden fees. Just an honest look at
+            what&apos;s working and what&apos;s not. Your website is working
+            24/7. Isn&apos;t it time it worked for you?
           </p>
         </div>
 
