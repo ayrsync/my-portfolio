@@ -25,7 +25,7 @@ export default function Experience() {
               <div className="grid md:grid-cols-2">
                 <div className="md:text-end md:me-8 relative">
                   <Image
-                    src="/images/logos/BrightHeadIT-logo.webp"
+                    src="/images/logos/BrightHeadIT-logo.jpg"
                     className="rounded-full h-9 w-9 md:ms-auto"
                     alt=""
                     height={0}
