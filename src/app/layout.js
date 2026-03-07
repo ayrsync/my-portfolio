@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title:
-    "Freelance Web Developer & SEO Expert | High-Performance Websites That Generate Leads",
+    "Web Developer & SEO Expert | High-Performance Websites That Generate Leads",
   description:
     "I help businesses grow with fast, SEO-optimized websites and performance-driven digital marketing. Specializing in modern web development, technical SEO, speed optimization, and lead generation strategies.",
   keywords: [
@@ -28,13 +28,13 @@ export const metadata = {
     title: "Web Development, SEO & Digital Marketing Freelancer",
     description:
       "Get a fast, modern website that ranks on Google and converts visitors into customers.",
-    url: "https://yourdomain.com",
+    url: "https://ayrsync.com",
     siteName: "AyrSync Solutions",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freelance Web Developer & SEO Expert",
+    title: "Web Developer & SEO Expert",
     description:
       "Helping businesses grow with high-performance websites and SEO strategies.",
   },
