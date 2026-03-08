@@ -43,46 +43,23 @@ export default function Navbar() {
           {/* <!-- Navbar Button --> */}
           <ul className="list-none menu-social mb-0">
             <li className="inline-flex">
-              <Link href="" className="ms-1">
-                <span className="login-btn-primary">
-                  <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
-                    <Unicons.UilDribbble width={16} />
-                  </span>
-                </span>
-                <span className="login-btn-light">
-                  <span className="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                    <Unicons.UilDribbble width={16} />
-                  </span>
-                </span>
+              <Link
+                href="mailto:arysync@gmail.com"
+                className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
+              >
+                <Unicons.UilEnvelope width={16} />
               </Link>
-              <Link href="" className="ms-1">
-                <span className="login-btn-primary ">
-                  <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
-                    <Unicons.UilBehance width={16} />
-                  </span>
-                </span>
-                <span className="login-btn-light ">
-                  <span className="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                    <Unicons.UilBehance width={16} />
-                  </span>
-                </span>
-              </Link>
-              <Link href="" className="ms-1">
-                <span className="login-btn-primary">
-                  <span className="btn btn-icon btn-sm rounded-full bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white">
-                    <Unicons.UilInstagram width={16} />
-                  </span>
-                </span>
-                <span className="login-btn-light">
-                  <span className="btn btn-icon btn-sm rounded-full bg-gray-50 hover:bg-gray-200 dark:bg-slate-900 dark:hover:bg-gray-700 hover:border-gray-100 dark:border-gray-700 dark:hover:border-gray-700">
-                    <Unicons.UilInstagram width={16} />
-                  </span>
-                </span>
+
+              <Link
+                href="tel:+917657910037"
+                className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
+              >
+                <Unicons.UilPhone width={16} />
               </Link>
             </li>
           </ul>
           {/* <!-- Navbar Collapse Manu Button --> */}
-          <button
+          {/* <button
             data-collapse="menu-collapse"
             type="button"
             className="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden"
@@ -91,7 +68,7 @@ export default function Navbar() {
           >
             <span className="sr-only">Navigation Menu</span>
             <i className="mdi mdi-menu text-[24px]"></i>
-          </button>
+          </button> */}
         </div>
 
         {/* <!-- Navbar Manu --> */}
@@ -100,7 +77,7 @@ export default function Navbar() {
           id="menu-collapse"
         >
           <ul className="navbar-nav" id="navbar-navlist">
-            <li className="nav-item">
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="home"
                 activeClass="active"
@@ -112,7 +89,7 @@ export default function Navbar() {
                 Home
               </Link1>
             </li>
-            <li className="nav-item">
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="about"
                 activeClass="active"
@@ -124,7 +101,7 @@ export default function Navbar() {
                 About Me
               </Link1>
             </li>
-            <li className="nav-item">
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="service"
                 activeClass="active"
@@ -136,7 +113,7 @@ export default function Navbar() {
                 Services
               </Link1>
             </li>
-            <li className="nav-item">
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="experience"
                 activeClass="active"
@@ -148,7 +125,7 @@ export default function Navbar() {
                 Experience
               </Link1>
             </li>
-            <li className="nav-item">
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="project"
                 activeClass="active"
@@ -160,7 +137,7 @@ export default function Navbar() {
                 Projects
               </Link1>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link1
                 to="blog"
                 activeClass="active"
@@ -171,8 +148,8 @@ export default function Navbar() {
               >
                 Blogs
               </Link1>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            <li className="nav-item cursor-pointer">
               <Link1
                 to="contact"
                 activeClass="active"
