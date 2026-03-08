@@ -33,7 +33,16 @@ export default function Footer() {
             <ul className="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
               <li className="inline">
                 <Link
-                  href="https://linkedin.com"
+                  href="https://www.facebook.com/profile.php?id=61584875161532"
+                  target="_blank"
+                  className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
+                >
+                  <Unicons.UilFacebook width={16} />
+                </Link>
+              </li>
+              <li className="inline">
+                <Link
+                  href="https://www.linkedin.com/in/laxman-kumar-1078723b2/"
                   target="_blank"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
                 >
@@ -43,7 +52,7 @@ export default function Footer() {
 
               <li className="inline">
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/ayrsync"
                   target="_blank"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
                 >
