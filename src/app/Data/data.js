@@ -81,46 +81,43 @@ export const servicesData = [
     Icon: Icon.Watch,
   },
 ];
-export const project = [
+export const webDevProjects = [
   {
-    image: "/images/works/1.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
+    title: "Online Medical Card",
+    category: "Healthcare Platform",
+    type: "web-development",
+    image: "/images/works/1.webp",
+    url: "https://www.onlinemedicalcard.com/",
   },
   {
-    image: "/images/works/2.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
+    title: "Lawyerdex",
+    category: "Legal Marketplace",
+    type: "web-development",
+    image: "/images/works/2.webp",
+    url: "https://lawyerdex.com/",
   },
   {
-    image: "/images/works/3.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
+    title: "My ESA Doctor",
+    category: "Healthcare Automation",
+    type: "web-development",
+    image: "/images/works/3.webp",
+    url: "https://myesadoctor.com/",
   },
   {
-    image: "/images/works/4.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
+    title: "Coox",
+    category: "Food and services platform",
+    type: "web-development",
+    image: "/images/works/4.webp",
+    url: "https://www.coox.in/",
   },
+];
+export const caseStudiesProjects = [
   {
-    image: "/images/works/5.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
-  },
-  {
-    image: "/images/works/6.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
-  },
-  {
-    image: "/images/works/7.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
-  },
-  {
-    image: "/images/works/8.jpg",
-    title: "Fronter Theme",
-    subTitle: "UI / UX Design",
+    title: "Mitchell & Ness E-Commerce",
+    category: "E-Commerce",
+    type: "case-study",
+    image: "/images/works/5.webp",
+    url: "https://drive.google.com/file/d/13uPF9cUu9MEonurTPEcWNsud-WZ0jndu/view",
   },
 ];
 export const blogData = [

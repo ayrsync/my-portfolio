@@ -5,12 +5,13 @@ import * as Unicons from "@iconscout/react-unicons";
 import Lightbox from "react-18-image-lightbox";
 import "../../../node_modules/react-18-image-lightbox/style.css";
 import Image from "next/image";
+import { caseStudiesProjects, webDevProjects } from "../Data/data";
 const images = [
   "/images/works/1.webp",
   "/images/works/2.webp",
   "/images/works/3.webp",
   "/images/works/4.webp",
-  "/images/works/5.jpg",
+  "/images/works/5.webp",
   "/images/works/6.jpg",
   "/images/works/7.jpg",
   "/images/works/8.jpg",
@@ -20,7 +21,7 @@ export default function Projects() {
   const [photoIndex, setActiveIndex] = useState(0);
   const [isOpen, setOpen] = useState(false);
 
-  const handleCLick = (index) => {
+  const handleClick = (index) => {
     setActiveIndex(index);
     setOpen(!isOpen);
   };
@@ -42,272 +43,96 @@ export default function Projects() {
             </p>
           </div>
 
+          <h3 className="text-center">Web Development</h3>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
-            <a
-              href="https://www.onlinemedicalcard.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
-            >
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/1.webp"
-                alt=""
-              />
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
-              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
-                  Online Medical Card
+            {webDevProjects.map((project, index) => (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+              >
+                <Image
+                  height={0}
+                  width={0}
+                  sizes="100vw"
+                  style={{ height: "auto", width: "100%" }}
+                  src={project.image}
+                  alt={project.title}
+                />
+
+                {/* overlay */}
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+
+                {/* text */}
+                <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                  <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                    {project.title}
+                  </span>
+                  <span className="block text-sm text-slate-400">
+                    {project.category}
+                  </span>
                 </span>
-                <span className="block text-sm text-slate-400">
-                  Healthcare Platform
+
+                {/* lightbox button */}
+                <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                  <Link
+                    href="#"
+                    onClick={() => handleClick(index)}
+                    className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
+                  >
+                    <Unicons.UilCamera width={16} />
+                  </Link>
                 </span>
-              </span>
+              </a>
+            ))}
+          </div>
 
-              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(0)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </span>
-            </a>
+          <h3 className="text-center mt-8">Case Studies</h3>
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
+            {caseStudiesProjects.map((project, index) => (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
+              >
+                <Image
+                  height={0}
+                  width={0}
+                  sizes="100vw"
+                  style={{ height: "auto", width: "100%" }}
+                  src={project.image}
+                  alt={project.title}
+                />
 
-            <a
-              href="https://lawyerdex.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
-            >
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/2.webp"
-                alt=""
-              />
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
-              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
-                  Lawyerdex
+                {/* overlay */}
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
+
+                {/* text */}
+                <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
+                  <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
+                    {project.title}
+                  </span>
+                  <span className="block text-sm text-slate-400">
+                    {project.category}
+                  </span>
                 </span>
-                <span className="block text-sm text-slate-400">
-                  Legal Marketplace
+
+                {/* lightbox button */}
+                <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
+                  <Link
+                    href="#"
+                    onClick={() => handleClick(index + 4)}
+                    className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
+                  >
+                    <Unicons.UilCamera width={16} />
+                  </Link>
                 </span>
-              </span>
-
-              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(1)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </span>
-            </a>
-
-            <a
-              href="https://myesadoctor.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
-            >
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/3.webp"
-                alt=""
-              />
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
-              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
-                  My ESA Doctor
-                </span>
-                <span className="block text-sm text-slate-400">
-                  Healthcare Automation
-                </span>
-              </span>
-
-              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(2)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </span>
-            </a>
-
-            <a
-              href="https://www.coox.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800"
-            >
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/4.webp"
-                alt=""
-              />
-              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></span>
-              <span className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <span className="text-white hover:text-amber-500 font-semibold transition-all duration-500">
-                  Coox
-                </span>
-                <span className="block text-sm text-slate-400">
-                  Food and services platform
-                </span>
-              </span>
-
-              <span className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(3)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </span>
-            </a>
-
-            {/* <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/5.jpg"
-                alt=""
-              />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Motos Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Landing</span>
-              </div>
-
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(3)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/6.jpg"
-                alt=""
-              />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Giglink Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Digital</span>
-              </div>
-
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(5)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                src="/images/works/7.jpg"
-                alt=""
-              />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Upwind Theme
-                </Link>
-                <span className="block text-sm text-slate-400">Landing</span>
-              </div>
-
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(6)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-lg shadow shadow-slate-200 dark:shadow-gray-800">
-              <Image
-                height={0}
-                width={0}
-                sizes="100vw"
-                style={{ height: "auto", width: "100%" }}
-                alt=""
-                src="/images/works/8.jpg"
-              />
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-b to-slate-900 from-transparent transition-all duration-500"></div>
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 m-6 transition-all duration-500">
-                <Link
-                  href="#!"
-                  className="text-white hover:text-amber-500 font-semibold transition-all duration-500"
-                >
-                  Techwind Theme
-                </Link>
-                <span className="block text-sm text-slate-400">
-                  Multipurpose
-                </span>
-              </div>
-
-              <div className="absolute z-10 opacity-0 group-hover:opacity-100 top-1/2 -translate-y-1/2 right-0 left-0 mx-auto text-center transition-all duration-500">
-                <Link
-                  href="#"
-                  onClick={() => handleCLick(7)}
-                  className="btn bg-amber-500 hover:bg-amber-600 border-amber-500 hover:border-amber-600 text-white btn-icon rounded-full lightbox"
-                >
-                  <Unicons.UilCamera width={16} />
-                </Link>
-              </div>
-            </div> */}
+              </a>
+            ))}
           </div>
         </div>
       </section>

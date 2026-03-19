@@ -39,36 +39,32 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
-          {/* <!-- Navbar Button --> */}
-          <ul className="list-none menu-social mb-0">
-            <li className="inline-flex">
-              <Link
-                href="mailto:arysync@gmail.com"
-                className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
-              >
-                <Unicons.UilEnvelope width={16} />
-              </Link>
-
-              <Link
-                href="tel:+917657910037"
-                className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
-              >
-                <Unicons.UilPhone width={16} />
-              </Link>
-            </li>
-          </ul>
-          {/* <!-- Navbar Collapse Manu Button --> */}
-          {/* <button
-            data-collapse="menu-collapse"
-            type="button"
-            className="collapse-btn inline-flex items-center ms-2 text-dark dark:text-white lg_992:hidden"
-            aria-controls="menu-collapse"
-            aria-expanded="false"
+        <div className="flex lg_992:order-2 ms-auto items-center">
+          {/* Email */}
+          <Link
+            href="mailto:arysync@gmail.com"
+            className="btn btn-icon me-2 btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
           >
-            <span className="sr-only">Navigation Menu</span>
-            <i className="mdi mdi-menu text-[24px]"></i>
-          </button> */}
+            <Unicons.UilEnvelope width={16} />
+          </Link>
+
+          {/* Phone */}
+          <Link
+            href="tel:+917657910037"
+            className="btn btn-icon me-2 btn-sm border border-gray-800 rounded-md hover:border-amber-500 hover:bg-amber-500"
+          >
+            <Unicons.UilPhone width={16} />
+          </Link>
+
+          {/* WhatsApp */}
+          <Link
+            href="https://wa.me/917657910037"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-green-500 hover:bg-green-500"
+          >
+            <Unicons.UilWhatsapp width={16} />
+          </Link>
         </div>
 
         {/* <!-- Navbar Manu --> */}
