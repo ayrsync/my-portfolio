@@ -12,9 +12,9 @@ const images = [
   "/images/works/3.webp",
   "/images/works/4.webp",
   "/images/works/5.webp",
-  "/images/works/6.jpg",
-  "/images/works/7.jpg",
-  "/images/works/8.jpg",
+  "/images/works/6.webp",
+  "/images/works/7.webp",
+  "/images/works/8.webp",
 ];
 
 export default function Projects() {

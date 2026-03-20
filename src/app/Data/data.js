@@ -119,6 +119,27 @@ export const caseStudiesProjects = [
     image: "/images/works/5.webp",
     url: "https://drive.google.com/file/d/13uPF9cUu9MEonurTPEcWNsud-WZ0jndu/view",
   },
+  {
+    title: "My Ideal Dental",
+    category: "Healthcare / Dental Services",
+    type: "case-study",
+    image: "/images/works/6.webp",
+    url: "https://drive.google.com/file/d/1eekB9FugazXtvVhtSNGVB0tdVpk6ZtPq/view",
+  },
+  {
+    title: "Glasswing shop",
+    category: "E-Commerce",
+    type: "case-study",
+    image: "/images/works/7.webp",
+    url: "https://drive.google.com/file/d/11cBVL8KkYNgscca1pbMIVAbmSShFEZo5/view",
+  },
+  {
+    title: "pure Dermtx",
+    category: "Healthcare",
+    type: "case-study",
+    image: "/images/works/8.webp",
+    url: "https://drive.google.com/file/d/1OthO4u0cr_TmtYM0aAAUfwsZ8gWeXE-s/view",
+  },
 ];
 export const blogData = [
   {
