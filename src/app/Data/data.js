@@ -5,8 +5,12 @@ export const expertiseData = [
     Icon: Icon.Monitor,
   },
   {
+    title: "SEO Optimization",
+    Icon: Icon.TrendingUp,
+  },
+  {
     title: "Mobile App Development",
-    Icon: Icon.Phone,
+    Icon: Icon.Smartphone,
   },
   // {
   //   title: "Cinema",
@@ -20,10 +24,10 @@ export const expertiseData = [
   //   title: "Music",
   //   Icon: Icon.Music,
   // },
-  {
-    title: "Games",
-    Icon: Icon.Watch,
-  },
+  // {
+  //   title: "Games",
+  //   Icon: Icon.Watch,
+  // },
   {
     title: "Designing",
     Icon: Icon.Box,
@@ -32,20 +36,17 @@ export const expertiseData = [
   //   title: "Sports",
   //   Icon: Icon.Target,
   // },
-  {
-    title: "SEO Optimization",
-    Icon: Icon.TrendingUp,
-  },
+
   // {
   //   title: "Reading",
   //   Icon: Icon.Book,
   // },
   {
-    title: "Android",
-    Icon: Icon.Smartphone,
+    title: "Agentic AI",
+    Icon: Icon.Monitor,
   },
   {
-    title: "Other Activity",
+    title: "AI SEO",
     Icon: Icon.Activity,
   },
 ];
